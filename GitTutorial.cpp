@@ -12,8 +12,12 @@ bool Guess(int number) {
         Random r;
         target = r.Next() % 100 + 1;
     }
-    if (number == target)
+    if (number == target){
+        std::cout << "Correct!!";
+        target = -1;
         return true;
+    }
+    else std::cout << "Wrong" << std:: endl
     return false;
 }
 
