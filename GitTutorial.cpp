@@ -1,13 +1,17 @@
-#include "stdafx"
-#include <string>
 #include <iostream>
+#include <string>
+
+#include "stdafx"
 
 using namespace System;
 
-bool Guess (int number){
-
+bool Guess(int number) {
 }
 
-int main(array<System::String ^> ^args){
-
+int main(array<System::String ^> ^ args) {
+    int guess;
+    do {
+        std::cin >> guess;
+    } while (!Guess(guess));
+    return 0;
 }
